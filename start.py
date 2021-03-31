@@ -37,3 +37,10 @@ plt.show()
 highest_bid = float(response["bids"][0][0])
 lowest_ask = float(response["asks"][0][0])
 print("Spread: " + str(round(((1 - highest_bid/lowest_ask) * 100), 3)) + "%")
+
+# (ver)kaufen automatisieren
+# Stonks kaufen: x (zwischen 1 und 10 Stufen) nach oben und nach unten (vielleicht auch variieren, also unten und oben unterschiedlich viele)
+# Verlauf der letzten z.B. 10 Tage verwenden, um Factor für Differenz zwischen 24h Durchschnittspreis und Stack-Buys zu finden
+# https://www.cryptodatadownload.com/data/ alle exchanges (vielleicht auch nur Binance) crawlen, dann auf allen Coins Algorithmus anwenden mit Random Werten für 1. Factor, 2. Differenz, 3. Anzahl Stack Buys
+# Neues private Rep machen
+# Vielleicht auch Wert auswerten, wie "stabil" ein Algorithmus ist -> Abstand zwischen Wochengewinnen Zusammenrechnen und mit diesem Abstand und Gesamtgewinn einen Wert ausrechnen, der zeigt, ob ein Gewinn wahrscheinlicher ist, als bei anderen. Damit verhindert man, dass seltene Einzelevents, bei denen der Wert skyrocketet die Auswertung verfälschen, da diese Events seltener passieren.
